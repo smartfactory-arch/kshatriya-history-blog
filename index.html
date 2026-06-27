@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshatriya History | Valor, Heritage, and Legacy</title>
+    <style>
+        /* CSS Variables for a Regal Theme */
+        :root {
+            --primary-color: #8B0000; /* Deep Red */
+            --accent-color: #DAA520;  /* Goldenrod */
+            --bg-light: #FDFBF7;      /* Off-white/Parchment */
+            --text-dark: #333333;
+            --text-light: #FFFFFF;
+        }
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--accent-color);
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1600182610361-4b4d664e07b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: var(--text-light);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #FFF8DC;
+        }
+
+        /* Content Sections */
+        .section {
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-divider {
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 0 auto 2rem auto;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border: 1px solid #E0E0E0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">KshatriyaHistory.org</a>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#battles">Battles</a></li>
+                <li><a href="#archives">Archives</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Preserving the Legacy of Valor</h1>
+        <p>Discover the rich heritage, legendary battles, and profound cultural impact of the Kshatriya warriors and rulers throughout history. Join us in archiving the past for the generations of the future.</p>
+        <a href="#explore" class="cta-btn">Explore the Archives</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>Our Mission</h2>
+        <div class="section-divider"></div>
+        <p style="max-width: 800px; margin: 0 auto; font-family: 'Arial', sans-serif;">
+            KshatriyaHistory.org is dedicated to the meticulous documentation and celebration of the warrior and ruling classes of ancient and medieval India. Our goal is to provide historically accurate, well-researched, and accessible information regarding their governance, administration, and monumental contributions to civilization.
+        </p>
+    </section>
+
+    <section id="explore" class="section" style="background-color: #F4EFE6;">
+        <h2>Historical Domains</h2>
+        <div class="section-divider"></div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Epic Battles & Campaigns</h3>
+                <p>Explore the tactical brilliance and legendary conflicts that defined historical eras, focusing on military strategy, weaponry, and the pivotal outcomes that shaped empires.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Governance & Administration</h3>
+                <p>Delve into the administrative systems, economic policies, taxation structures, and diplomatic relations established by historical ruling classes to maintain vast territories.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Primary Sources & Artifacts</h3>
+                <p>Discover ancient manuscripts, stone inscriptions, coins, and weaponry that provide firsthand historical accounts and evidence of the era's socio-political climate.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 KshatriyaHistory.org. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; color: #AAAAAA;">Dedicated to History, Heritage, and Truth.</p>
+    </footer>
+
+</body>
+</html>
